@@ -1,0 +1,715 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		98007CAEBAFAD4103717DBC4 /* Pods_Quandoo_demoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D24389DDE6831A2AB1A556D /* Pods_Quandoo_demoTests.framework */; };
+		D5CED37921348FFF00EA0530 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CED37821348FFF00EA0530 /* AppDelegate.swift */; };
+		D5CED37B21348FFF00EA0530 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CED37A21348FFF00EA0530 /* ViewController.swift */; };
+		D5CED37E21348FFF00EA0530 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5CED37C21348FFF00EA0530 /* Main.storyboard */; };
+		D5CED3802134900000EA0530 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5CED37F2134900000EA0530 /* Assets.xcassets */; };
+		D5CED3832134900000EA0530 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5CED3812134900000EA0530 /* LaunchScreen.storyboard */; };
+		D5CED38E2134900000EA0530 /* Quandoo_demoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CED38D2134900000EA0530 /* Quandoo_demoTests.swift */; };
+		D5CED3B22134916700EA0530 /* UsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CED39B2134916500EA0530 /* UsersViewController.swift */; };
+		D5CED3B32134916700EA0530 /* StringExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CED39D2134916600EA0530 /* StringExt.swift */; };
+		D5CED3B42134916700EA0530 /* ResponseExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CED39E2134916600EA0530 /* ResponseExt.swift */; };
+		D5CED3B52134916700EA0530 /* TargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CED3A02134916600EA0530 /* TargetType.swift */; };
+		D5CED3B62134916700EA0530 /* Rest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CED3A12134916600EA0530 /* Rest.swift */; };
+		D5CED3B72134916700EA0530 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CED3A22134916600EA0530 /* Config.swift */; };
+		D5CED3B82134916700EA0530 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CED3A32134916600EA0530 /* Router.swift */; };
+		D5CED3B92134916700EA0530 /* UserTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CED3A42134916600EA0530 /* UserTarget.swift */; };
+		D5CED3BA2134916700EA0530 /* ContentViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CED3A62134916600EA0530 /* ContentViewModelProtocol.swift */; };
+		D5CED3BB2134916700EA0530 /* UsersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CED3A72134916600EA0530 /* UsersViewModel.swift */; };
+		D5CED3BC2134916700EA0530 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CED3A92134916600EA0530 /* UserModel.swift */; };
+		D5CED3BF2134916700EA0530 /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CED3AC2134916600EA0530 /* PostModel.swift */; };
+		D5CED3C02134916700EA0530 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CED3AE2134916700EA0530 /* UserCell.swift */; };
+		D5CED3C12134916700EA0530 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CED3AF2134916700EA0530 /* PostCell.swift */; };
+		D5CED3C3213494DC00EA0530 /* PostTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CED3C2213494DC00EA0530 /* PostTarget.swift */; };
+		D5CED3C5213495F800EA0530 /* AddressModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CED3C4213495F800EA0530 /* AddressModel.swift */; };
+		D5CED3C72134B9FF00EA0530 /* PostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CED3C62134B9FF00EA0530 /* PostsViewController.swift */; };
+		D5CED3C92134BA8800EA0530 /* BaseTableContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CED3C82134BA8800EA0530 /* BaseTableContentViewController.swift */; };
+		D67C35D239C763E7C6096266 /* Pods_Quandoo_demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53B0EBC9D04CE5608D22437C /* Pods_Quandoo_demo.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D5CED38A2134900000EA0530 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D5CED36D21348FFF00EA0530 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D5CED37421348FFF00EA0530;
+			remoteInfo = Quandoo_demo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0D24389DDE6831A2AB1A556D /* Pods_Quandoo_demoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Quandoo_demoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		53B0EBC9D04CE5608D22437C /* Pods_Quandoo_demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Quandoo_demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AB94D43423AAABFA44A91FC /* Pods-Quandoo_demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quandoo_demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Quandoo_demo/Pods-Quandoo_demo.debug.xcconfig"; sourceTree = "<group>"; };
+		78B0DFBF61791CE0EED59686 /* Pods-Quandoo_demoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quandoo_demoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Quandoo_demoTests/Pods-Quandoo_demoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		92C0A5A6A3482A01E2F4CB4E /* Pods-Quandoo_demoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quandoo_demoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Quandoo_demoTests/Pods-Quandoo_demoTests.release.xcconfig"; sourceTree = "<group>"; };
+		D5CED37521348FFF00EA0530 /* Quandoo_demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quandoo_demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5CED37821348FFF00EA0530 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D5CED37A21348FFF00EA0530 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D5CED37D21348FFF00EA0530 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D5CED37F2134900000EA0530 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D5CED3822134900000EA0530 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D5CED3842134900000EA0530 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5CED3892134900000EA0530 /* Quandoo_demoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Quandoo_demoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5CED38D2134900000EA0530 /* Quandoo_demoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quandoo_demoTests.swift; sourceTree = "<group>"; };
+		D5CED38F2134900000EA0530 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5CED39B2134916500EA0530 /* UsersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersViewController.swift; sourceTree = "<group>"; };
+		D5CED39D2134916600EA0530 /* StringExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExt.swift; sourceTree = "<group>"; };
+		D5CED39E2134916600EA0530 /* ResponseExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseExt.swift; sourceTree = "<group>"; };
+		D5CED3A02134916600EA0530 /* TargetType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TargetType.swift; sourceTree = "<group>"; };
+		D5CED3A12134916600EA0530 /* Rest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rest.swift; sourceTree = "<group>"; };
+		D5CED3A22134916600EA0530 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		D5CED3A32134916600EA0530 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		D5CED3A42134916600EA0530 /* UserTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTarget.swift; sourceTree = "<group>"; };
+		D5CED3A62134916600EA0530 /* ContentViewModelProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentViewModelProtocol.swift; sourceTree = "<group>"; };
+		D5CED3A72134916600EA0530 /* UsersViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersViewModel.swift; sourceTree = "<group>"; };
+		D5CED3A92134916600EA0530 /* UserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		D5CED3AC2134916600EA0530 /* PostModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
+		D5CED3AE2134916700EA0530 /* UserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		D5CED3AF2134916700EA0530 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		D5CED3C2213494DC00EA0530 /* PostTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTarget.swift; sourceTree = "<group>"; };
+		D5CED3C4213495F800EA0530 /* AddressModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressModel.swift; sourceTree = "<group>"; };
+		D5CED3C62134B9FF00EA0530 /* PostsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsViewController.swift; sourceTree = "<group>"; };
+		D5CED3C82134BA8800EA0530 /* BaseTableContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableContentViewController.swift; sourceTree = "<group>"; };
+		E639EAB70DEBDC3D5C6299B1 /* Pods-Quandoo_demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quandoo_demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Quandoo_demo/Pods-Quandoo_demo.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D5CED37221348FFF00EA0530 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D67C35D239C763E7C6096266 /* Pods_Quandoo_demo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5CED3862134900000EA0530 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98007CAEBAFAD4103717DBC4 /* Pods_Quandoo_demoTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		84508C7F93407FB87917FF00 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				53B0EBC9D04CE5608D22437C /* Pods_Quandoo_demo.framework */,
+				0D24389DDE6831A2AB1A556D /* Pods_Quandoo_demoTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D5CED36C21348FFF00EA0530 = {
+			isa = PBXGroup;
+			children = (
+				D5CED37721348FFF00EA0530 /* Quandoo_demo */,
+				D5CED38C2134900000EA0530 /* Quandoo_demoTests */,
+				D5CED37621348FFF00EA0530 /* Products */,
+				DE0ADAB38693B11E2F99B5A2 /* Pods */,
+				84508C7F93407FB87917FF00 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D5CED37621348FFF00EA0530 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D5CED37521348FFF00EA0530 /* Quandoo_demo.app */,
+				D5CED3892134900000EA0530 /* Quandoo_demoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D5CED37721348FFF00EA0530 /* Quandoo_demo */ = {
+			isa = PBXGroup;
+			children = (
+				D5CED3C82134BA8800EA0530 /* BaseTableContentViewController.swift */,
+				D5CED3A62134916600EA0530 /* ContentViewModelProtocol.swift */,
+				D5CED3982134916500EA0530 /* UsersController */,
+				D5CED3A52134916600EA0530 /* PostsController */,
+				D5CED3AD2134916700EA0530 /* Views */,
+				D5CED3A82134916600EA0530 /* Models */,
+				D5CED39F2134916600EA0530 /* Network */,
+				D5CED39C2134916600EA0530 /* Extensions */,
+				D5CED37821348FFF00EA0530 /* AppDelegate.swift */,
+				D5CED37A21348FFF00EA0530 /* ViewController.swift */,
+				D5CED37C21348FFF00EA0530 /* Main.storyboard */,
+				D5CED37F2134900000EA0530 /* Assets.xcassets */,
+				D5CED3812134900000EA0530 /* LaunchScreen.storyboard */,
+				D5CED3842134900000EA0530 /* Info.plist */,
+			);
+			path = Quandoo_demo;
+			sourceTree = "<group>";
+		};
+		D5CED38C2134900000EA0530 /* Quandoo_demoTests */ = {
+			isa = PBXGroup;
+			children = (
+				D5CED38D2134900000EA0530 /* Quandoo_demoTests.swift */,
+				D5CED38F2134900000EA0530 /* Info.plist */,
+			);
+			path = Quandoo_demoTests;
+			sourceTree = "<group>";
+		};
+		D5CED3982134916500EA0530 /* UsersController */ = {
+			isa = PBXGroup;
+			children = (
+				D5CED3A72134916600EA0530 /* UsersViewModel.swift */,
+				D5CED39B2134916500EA0530 /* UsersViewController.swift */,
+			);
+			path = UsersController;
+			sourceTree = "<group>";
+		};
+		D5CED39C2134916600EA0530 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D5CED39D2134916600EA0530 /* StringExt.swift */,
+				D5CED39E2134916600EA0530 /* ResponseExt.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D5CED39F2134916600EA0530 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				D5CED3A12134916600EA0530 /* Rest.swift */,
+				D5CED3A22134916600EA0530 /* Config.swift */,
+				D5CED3A32134916600EA0530 /* Router.swift */,
+				D5CED3A02134916600EA0530 /* TargetType.swift */,
+				D5CED3A42134916600EA0530 /* UserTarget.swift */,
+				D5CED3C2213494DC00EA0530 /* PostTarget.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		D5CED3A52134916600EA0530 /* PostsController */ = {
+			isa = PBXGroup;
+			children = (
+				D5CED3C62134B9FF00EA0530 /* PostsViewController.swift */,
+			);
+			path = PostsController;
+			sourceTree = "<group>";
+		};
+		D5CED3A82134916600EA0530 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D5CED3A92134916600EA0530 /* UserModel.swift */,
+				D5CED3C4213495F800EA0530 /* AddressModel.swift */,
+				D5CED3AC2134916600EA0530 /* PostModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D5CED3AD2134916700EA0530 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D5CED3AE2134916700EA0530 /* UserCell.swift */,
+				D5CED3AF2134916700EA0530 /* PostCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DE0ADAB38693B11E2F99B5A2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6AB94D43423AAABFA44A91FC /* Pods-Quandoo_demo.debug.xcconfig */,
+				E639EAB70DEBDC3D5C6299B1 /* Pods-Quandoo_demo.release.xcconfig */,
+				78B0DFBF61791CE0EED59686 /* Pods-Quandoo_demoTests.debug.xcconfig */,
+				92C0A5A6A3482A01E2F4CB4E /* Pods-Quandoo_demoTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D5CED37421348FFF00EA0530 /* Quandoo_demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5CED3922134900000EA0530 /* Build configuration list for PBXNativeTarget "Quandoo_demo" */;
+			buildPhases = (
+				D32782B0A8934E8CF7169338 /* [CP] Check Pods Manifest.lock */,
+				D5CED37121348FFF00EA0530 /* Sources */,
+				D5CED37221348FFF00EA0530 /* Frameworks */,
+				D5CED37321348FFF00EA0530 /* Resources */,
+				6B4C1A1D425FA078A810495C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Quandoo_demo;
+			productName = Quandoo_demo;
+			productReference = D5CED37521348FFF00EA0530 /* Quandoo_demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D5CED3882134900000EA0530 /* Quandoo_demoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5CED3952134900000EA0530 /* Build configuration list for PBXNativeTarget "Quandoo_demoTests" */;
+			buildPhases = (
+				825EAA248D263CEC3812CE7F /* [CP] Check Pods Manifest.lock */,
+				D5CED3852134900000EA0530 /* Sources */,
+				D5CED3862134900000EA0530 /* Frameworks */,
+				D5CED3872134900000EA0530 /* Resources */,
+				B3CAD381E9850541D2C8C305 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D5CED38B2134900000EA0530 /* PBXTargetDependency */,
+			);
+			name = Quandoo_demoTests;
+			productName = Quandoo_demoTests;
+			productReference = D5CED3892134900000EA0530 /* Quandoo_demoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D5CED36D21348FFF00EA0530 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = quandoo;
+				TargetAttributes = {
+					D5CED37421348FFF00EA0530 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					D5CED3882134900000EA0530 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = D5CED37421348FFF00EA0530;
+					};
+				};
+			};
+			buildConfigurationList = D5CED37021348FFF00EA0530 /* Build configuration list for PBXProject "Quandoo_demo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D5CED36C21348FFF00EA0530;
+			productRefGroup = D5CED37621348FFF00EA0530 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D5CED37421348FFF00EA0530 /* Quandoo_demo */,
+				D5CED3882134900000EA0530 /* Quandoo_demoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D5CED37321348FFF00EA0530 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5CED3832134900000EA0530 /* LaunchScreen.storyboard in Resources */,
+				D5CED3802134900000EA0530 /* Assets.xcassets in Resources */,
+				D5CED37E21348FFF00EA0530 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5CED3872134900000EA0530 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6B4C1A1D425FA078A810495C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Quandoo_demo/Pods-Quandoo_demo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/HTTPStatusCodes/HTTPStatusCodes.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HTTPStatusCodes.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Quandoo_demo/Pods-Quandoo_demo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		825EAA248D263CEC3812CE7F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Quandoo_demoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B3CAD381E9850541D2C8C305 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Quandoo_demoTests/Pods-Quandoo_demoTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Quandoo_demoTests/Pods-Quandoo_demoTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D32782B0A8934E8CF7169338 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Quandoo_demo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D5CED37121348FFF00EA0530 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5CED3B82134916700EA0530 /* Router.swift in Sources */,
+				D5CED3B42134916700EA0530 /* ResponseExt.swift in Sources */,
+				D5CED3B22134916700EA0530 /* UsersViewController.swift in Sources */,
+				D5CED3C5213495F800EA0530 /* AddressModel.swift in Sources */,
+				D5CED3BB2134916700EA0530 /* UsersViewModel.swift in Sources */,
+				D5CED3C92134BA8800EA0530 /* BaseTableContentViewController.swift in Sources */,
+				D5CED3C02134916700EA0530 /* UserCell.swift in Sources */,
+				D5CED3C72134B9FF00EA0530 /* PostsViewController.swift in Sources */,
+				D5CED3BC2134916700EA0530 /* UserModel.swift in Sources */,
+				D5CED3B62134916700EA0530 /* Rest.swift in Sources */,
+				D5CED37B21348FFF00EA0530 /* ViewController.swift in Sources */,
+				D5CED3BA2134916700EA0530 /* ContentViewModelProtocol.swift in Sources */,
+				D5CED3B92134916700EA0530 /* UserTarget.swift in Sources */,
+				D5CED3B52134916700EA0530 /* TargetType.swift in Sources */,
+				D5CED3C12134916700EA0530 /* PostCell.swift in Sources */,
+				D5CED3BF2134916700EA0530 /* PostModel.swift in Sources */,
+				D5CED3B72134916700EA0530 /* Config.swift in Sources */,
+				D5CED3C3213494DC00EA0530 /* PostTarget.swift in Sources */,
+				D5CED3B32134916700EA0530 /* StringExt.swift in Sources */,
+				D5CED37921348FFF00EA0530 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5CED3852134900000EA0530 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5CED38E2134900000EA0530 /* Quandoo_demoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D5CED38B2134900000EA0530 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D5CED37421348FFF00EA0530 /* Quandoo_demo */;
+			targetProxy = D5CED38A2134900000EA0530 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D5CED37C21348FFF00EA0530 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D5CED37D21348FFF00EA0530 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D5CED3812134900000EA0530 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D5CED3822134900000EA0530 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D5CED3902134900000EA0530 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D5CED3912134900000EA0530 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D5CED3932134900000EA0530 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6AB94D43423AAABFA44A91FC /* Pods-Quandoo_demo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q8GF4EXWZ5;
+				INFOPLIST_FILE = Quandoo_demo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Quandoo-demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D5CED3942134900000EA0530 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E639EAB70DEBDC3D5C6299B1 /* Pods-Quandoo_demo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q8GF4EXWZ5;
+				INFOPLIST_FILE = Quandoo_demo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Quandoo-demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D5CED3962134900000EA0530 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78B0DFBF61791CE0EED59686 /* Pods-Quandoo_demoTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q8GF4EXWZ5;
+				INFOPLIST_FILE = Quandoo_demoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Quandoo-demoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Quandoo_demo.app/Quandoo_demo";
+			};
+			name = Debug;
+		};
+		D5CED3972134900000EA0530 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92C0A5A6A3482A01E2F4CB4E /* Pods-Quandoo_demoTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q8GF4EXWZ5;
+				INFOPLIST_FILE = Quandoo_demoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Quandoo-demoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Quandoo_demo.app/Quandoo_demo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D5CED37021348FFF00EA0530 /* Build configuration list for PBXProject "Quandoo_demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5CED3902134900000EA0530 /* Debug */,
+				D5CED3912134900000EA0530 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D5CED3922134900000EA0530 /* Build configuration list for PBXNativeTarget "Quandoo_demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5CED3932134900000EA0530 /* Debug */,
+				D5CED3942134900000EA0530 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D5CED3952134900000EA0530 /* Build configuration list for PBXNativeTarget "Quandoo_demoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5CED3962134900000EA0530 /* Debug */,
+				D5CED3972134900000EA0530 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D5CED36D21348FFF00EA0530 /* Project object */;
+}

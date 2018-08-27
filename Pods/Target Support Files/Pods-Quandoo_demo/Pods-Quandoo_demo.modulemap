@@ -1,0 +1,6 @@
+framework module Pods_Quandoo_demo {
+  umbrella header "Pods-Quandoo_demo-umbrella.h"
+
+  export *
+  module * { export * }
+}

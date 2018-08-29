@@ -9,10 +9,6 @@
 import Foundation
 import PromiseKit
 
-enum ResultAction {
-    case update
-    case error(Error)
-}
 
 /// Protocol represents result view model.
 protocol ContentViewModelProtocol {

@@ -32,6 +32,11 @@
 		D5CED3C5213495F800EA0530 /* AddressModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CED3C4213495F800EA0530 /* AddressModel.swift */; };
 		D5CED3C72134B9FF00EA0530 /* PostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CED3C62134B9FF00EA0530 /* PostsViewController.swift */; };
 		D5CED3C92134BA8800EA0530 /* BaseTableContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CED3C82134BA8800EA0530 /* BaseTableContentViewController.swift */; };
+		D5CED3CB2135C00000EA0530 /* UsersViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CED3CA2135C00000EA0530 /* UsersViewModelProtocol.swift */; };
+		D5CED3CD2136095200EA0530 /* PostsViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CED3CC2136095200EA0530 /* PostsViewModelProtocol.swift */; };
+		D5CED3CF2136099A00EA0530 /* PostsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CED3CE2136099A00EA0530 /* PostsViewModel.swift */; };
+		D5CED3D121360B9C00EA0530 /* PostsQueryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CED3D021360B9C00EA0530 /* PostsQueryModel.swift */; };
+		D5CED3D321360C5800EA0530 /* QueryModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CED3D221360C5800EA0530 /* QueryModelType.swift */; };
 		D67C35D239C763E7C6096266 /* Pods_Quandoo_demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53B0EBC9D04CE5608D22437C /* Pods_Quandoo_demo.framework */; };
 /* End PBXBuildFile section */
 
@@ -79,6 +84,11 @@
 		D5CED3C4213495F800EA0530 /* AddressModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressModel.swift; sourceTree = "<group>"; };
 		D5CED3C62134B9FF00EA0530 /* PostsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsViewController.swift; sourceTree = "<group>"; };
 		D5CED3C82134BA8800EA0530 /* BaseTableContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableContentViewController.swift; sourceTree = "<group>"; };
+		D5CED3CA2135C00000EA0530 /* UsersViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewModelProtocol.swift; sourceTree = "<group>"; };
+		D5CED3CC2136095200EA0530 /* PostsViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsViewModelProtocol.swift; sourceTree = "<group>"; };
+		D5CED3CE2136099A00EA0530 /* PostsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsViewModel.swift; sourceTree = "<group>"; };
+		D5CED3D021360B9C00EA0530 /* PostsQueryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsQueryModel.swift; sourceTree = "<group>"; };
+		D5CED3D221360C5800EA0530 /* QueryModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryModelType.swift; sourceTree = "<group>"; };
 		E639EAB70DEBDC3D5C6299B1 /* Pods-Quandoo_demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quandoo_demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Quandoo_demo/Pods-Quandoo_demo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -164,6 +174,7 @@
 		D5CED3982134916500EA0530 /* UsersController */ = {
 			isa = PBXGroup;
 			children = (
+				D5CED3CA2135C00000EA0530 /* UsersViewModelProtocol.swift */,
 				D5CED3A72134916600EA0530 /* UsersViewModel.swift */,
 				D5CED39B2134916500EA0530 /* UsersViewController.swift */,
 			);
@@ -195,6 +206,8 @@
 		D5CED3A52134916600EA0530 /* PostsController */ = {
 			isa = PBXGroup;
 			children = (
+				D5CED3CC2136095200EA0530 /* PostsViewModelProtocol.swift */,
+				D5CED3CE2136099A00EA0530 /* PostsViewModel.swift */,
 				D5CED3C62134B9FF00EA0530 /* PostsViewController.swift */,
 			);
 			path = PostsController;
@@ -206,6 +219,8 @@
 				D5CED3A92134916600EA0530 /* UserModel.swift */,
 				D5CED3C4213495F800EA0530 /* AddressModel.swift */,
 				D5CED3AC2134916600EA0530 /* PostModel.swift */,
+				D5CED3D021360B9C00EA0530 /* PostsQueryModel.swift */,
+				D5CED3D221360C5800EA0530 /* QueryModelType.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -422,12 +437,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5CED3D121360B9C00EA0530 /* PostsQueryModel.swift in Sources */,
 				D5CED3B82134916700EA0530 /* Router.swift in Sources */,
 				D5CED3B42134916700EA0530 /* ResponseExt.swift in Sources */,
 				D5CED3B22134916700EA0530 /* UsersViewController.swift in Sources */,
 				D5CED3C5213495F800EA0530 /* AddressModel.swift in Sources */,
 				D5CED3BB2134916700EA0530 /* UsersViewModel.swift in Sources */,
+				D5CED3D321360C5800EA0530 /* QueryModelType.swift in Sources */,
 				D5CED3C92134BA8800EA0530 /* BaseTableContentViewController.swift in Sources */,
+				D5CED3CD2136095200EA0530 /* PostsViewModelProtocol.swift in Sources */,
+				D5CED3CB2135C00000EA0530 /* UsersViewModelProtocol.swift in Sources */,
 				D5CED3C02134916700EA0530 /* UserCell.swift in Sources */,
 				D5CED3C72134B9FF00EA0530 /* PostsViewController.swift in Sources */,
 				D5CED3BC2134916700EA0530 /* UserModel.swift in Sources */,
@@ -437,6 +456,7 @@
 				D5CED3B92134916700EA0530 /* UserTarget.swift in Sources */,
 				D5CED3B52134916700EA0530 /* TargetType.swift in Sources */,
 				D5CED3C12134916700EA0530 /* PostCell.swift in Sources */,
+				D5CED3CF2136099A00EA0530 /* PostsViewModel.swift in Sources */,
 				D5CED3BF2134916700EA0530 /* PostModel.swift in Sources */,
 				D5CED3B72134916700EA0530 /* Config.swift in Sources */,
 				D5CED3C3213494DC00EA0530 /* PostTarget.swift in Sources */,

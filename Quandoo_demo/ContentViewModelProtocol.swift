@@ -9,13 +9,14 @@
 import Foundation
 import PromiseKit
 
+enum ResultAction {
+    case update
+    case error(Error)
+}
+
 /// Protocol represents result view model.
 protocol ContentViewModelProtocol {
-    
-    associatedtype ModelType
-    
-    /// Data source
-    var items: [ModelType] { get }
+    associatedtype QueryModelTypeAssociated
     
     /// Progress state
     var isLoading: Bool { get }
@@ -23,20 +24,5 @@ protocol ContentViewModelProtocol {
     /// Method asks for the next chunk of data
     ///
     /// - Returns: promise with a suggestion to update UI
-    func loadData() -> Promise<Bool>
-}
-
-
-/// Abstract class for content view model
-class ContentViewModel: ContentViewModelProtocol {
-    typealias ModelType = AnyObject
-    
-    var items: [AnyObject]
-    
-    var isLoading: Bool
-    
-    /// needs to override
-    func loadData() -> Promise<Bool> {
-        
-    }
+    func loadData(_ query: QueryModelTypeAssociated?) -> Promise<Bool>
 }

@@ -10,25 +10,12 @@ import UIKit
 
 class BaseTableContentViewController: UIViewController {
     
-    @IBOutlet private weak var tableView: UITableView!
-    @IBOutlet private weak var noSearchResultsLabel: UILabel!
-    
-    internal let viewModel = ContentViewModel()
+    @IBOutlet internal weak var tableView: UITableView!
+    @IBOutlet internal weak var noSearchResultsLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         configureTableView()
-        loadData()
-    }
-    
-    func loadData() {
-        viewModel.loadData().done { [weak self] updateUI in
-            if updateUI {
-                self?.updateUI()
-            }
-        }.catch { [weak self] (error) in
-                self?.updateUI()
-        }
     }
     
     private  func configureTableView() {
@@ -38,8 +25,8 @@ class BaseTableContentViewController: UIViewController {
         tableView.showsVerticalScrollIndicator = true
     }
     
-    private func updateUI() {
-        if dataSource().count == 0 {
+    internal func updateUI(_ error: Error? = nil) {
+        if let _ = error {
             noSearchResultsLabel.isHidden = false
             tableView.isHidden = true
         } else {
@@ -48,17 +35,6 @@ class BaseTableContentViewController: UIViewController {
             tableView.isHidden = false
         }
     }
-    
-    internal func dataSource() -> [UserModel] {
-        return viewModel.users
-    }
 }
 
-// MARK: - UITableViewDataSource
-extension UsersViewController: UITableViewDelegate, UITableViewDataSource {
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return dataSource().count
-    }
-}
 
